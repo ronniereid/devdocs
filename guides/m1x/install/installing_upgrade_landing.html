@@ -140,7 +140,7 @@ This includes the <code>media</code> directory and subdirectories; all extension
 php -f shell/url_migration_to_1_13.php - <em>thread-count</em></pre>
 <em>thread-count</em> is the number of CPU cores in your Magento server, minus 1, to a maximum of 15.</li>
 <img src="{{ site.baseurl }}common/images/m1x/new.png" style="position:absolute;margin:1px 0 0 -75px;" /><li style="list-style-type:lower-alpha">Run a full reindex from the command line: 
-<pre>[your Magento install dir]/php -f shell/indexer.php -- --reindexall</pre></li>
+<pre>[your Magento install dir]/php -f shell/indexer.php reindexall</pre></li>
 <img src="{{ site.baseurl }}common/images/m1x/new.png" style="position:absolute;margin:1px 0 0 -75px;" /><li style="list-style-type:lower-alpha">Clear the following directories from the command line: 
 <pre>[your Magento install dir]/var/cache /var/full_page_cache /var/locks</pre></li>
 <li style="list-style-type:lower-alpha">Enable cron and make sure the Magento cron job is set up.</li>
@@ -177,7 +177,7 @@ This includes the <code>media</code> directory and subdirectories; all extension
 <li style="list-style-type:lower-alpha">In a web browser, go to your new base URL.</li>
 <li style="list-style-type:lower-alpha">Wait for upgrade scripts to run.</li>
 <img src="{{ site.baseurl }}common/images/m1x/new.png" style="position:absolute;margin:1px 0 0 -75px;" /><li style="list-style-type:lower-alpha">Run a full reindex from the command line: 
-<pre>[your Magento install dir]/php -f shell/indexer.php -- --reindexall</pre></li>
+<pre>[your Magento install dir]/php -f shell/indexer.php reindexall</pre></li>
 <img src="{{ site.baseurl }}common/images/m1x/new.png" style="position:absolute;margin:1px 0 0 -75px;" /><li style="list-style-type:lower-alpha">Clear the following directories from the command line: 
 <pre>[your Magento install dir]/var/cache /var/full_page_cache /var/locks</pre></li>
 <li style="list-style-type:lower-alpha">Enable cron and make sure the Magento cron job is set up.</li>
